@@ -1,7 +1,7 @@
 [theme]
 primaryColor="#81c784"                 # Hijau pastel (tombol, slider, aksen)
 backgroundColor="#f8ccdbff"              # Pink pastel lembut (latar utama)
-secondaryBackgroundColor="#f1c4d3ff"     # Pink terang (sidebar, input)
+secondaryBackgroundColor="#f8ccdbff"     # Pink terang (sidebar, input)
 textColor="#2c2c2c"                     # Abu gelap
 font = "sans serif"
 
