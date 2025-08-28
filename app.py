@@ -4,6 +4,12 @@ import numpy as np
 import pandas as pd
 import json
 
+# Konfigurasi tampilan halaman
+st.set_page_config(
+    page_title="Diabetes Detection System",
+    page_icon="🩺",
+    layout="centered"
+)
 
 st.markdown("""
 <style>
@@ -50,14 +56,6 @@ h1, h2, h3 {
 }
 </style>
 """, unsafe_allow_html=True)
-
-
-# Konfigurasi tampilan halaman
-st.set_page_config(
-    page_title="Diabetes Detection System",
-    page_icon="🩺",
-    layout="centered"
-)
 
 # Kurangi jarak judul ke atas
 st.markdown("""

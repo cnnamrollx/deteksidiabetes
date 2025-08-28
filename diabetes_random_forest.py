@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 import json
+import streamlit as st
+fig, ax = plt.subplots()
+
 
 # Load dataset
 df = pd.read_csv('diabetes.csv')
@@ -36,7 +39,7 @@ numeric_cols = ['Pregnancies','Glucose','BloodPressure',
 #Visualisasi Distribusi Numerik
 df[numeric_cols].hist(bins=20, figsize=(15,10), color='skyblue', edgecolor='black')
 plt.suptitle("Distribusi Data Numerik", fontsize=16)
-plt.show()
+st.pyplot(fig)
 
 # Pisahkan fitur & target, abaikan kolom prediksi lama
 X = df.drop(['Outcome'], axis=1)  
@@ -70,7 +73,7 @@ correlation_matrix = df.corr()
 plt.figure(figsize=(10, 8))
 sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap="coolwarm", cbar=True)
 plt.title("Matriks Korelasi Variabel")
-plt.show()
+st.pyplot(fig)
 
 # Split data menjadi training dan testing set (80:20)
 X_train, X_test, y_train, y_test = train_test_split(
@@ -105,6 +108,7 @@ print("\nClassification Report:")
 print(classification_report(y_test, y_pred, target_names=['No Diabetes', 'Diabetes']))
 
 # Confusion Matrix
+fig, ax = plt.subplots()
 cm = confusion_matrix(y_test, y_pred)
 plt.figure(figsize=(8, 6))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
@@ -113,7 +117,7 @@ sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
 plt.title('Confusion Matrix')
 plt.ylabel('Actual')
 plt.xlabel('Predicted')
-plt.show()
+st.pyplot(fig)
 
 # Feature Importance
 feature_importance = pd.DataFrame({
@@ -127,7 +131,7 @@ sns.barplot(x='importance', y='feature', data=feature_importance)
 plt.title('Feature Importance in Random Forest Model')
 plt.xlabel('Importance')
 plt.tight_layout()
-plt.show()
+st.pyplot(fig)
 
 print("\nFeature Importance:")
 print(feature_importance)

@@ -16,7 +16,7 @@ Dependensi yang diperlukan tercantum di `requirements.txt`:
 1. Pastikan Python terinstal (versi 3.6+).
 2. Instal dependensi dengan perintah:
    ```
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
 
 ## Cara Penggunaan
