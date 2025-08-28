@@ -6,10 +6,11 @@ Aplikasi ini adalah framework Streamlit untuk memprediksi diabetes menggunakan m
 ## Persyaratan
 Dependensi yang diperlukan tercantum di `requirements.txt`:
 - streamlit==1.36.0
-- scikit-learn==1.5.1
-- pandas==2.2.2
-- numpy==2.0.0
+- scikit-learn==1.3.2
+- numpy==1.26.4
 - joblib==1.4.2
+- matplotlib
+- seaborn
 
 ## Instalasi
 1. Pastikan Python terinstal (versi 3.6+).
