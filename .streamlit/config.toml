@@ -11,3 +11,4 @@ enableXsrfProtection = true
 
 [global]
 runner = "python3.10"  # Ubah ke versi Python yang Anda inginkan
+

@@ -40,16 +40,16 @@ st.markdown("""
 
 /* Judul dan header */
 h1, h2, h3 {
-    color: #d81b60; /* pink tua */
+    color: #5f253aff; /* pink tua */
 }
 .title-style {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-top: -30px;
-    color: #d81b60;
+    color: #5f253aff;
 }
-
+            
 /* Kotak input */
 .stNumberInput > div > div > input {
     background-color: white;
