@@ -16,13 +16,13 @@ st.markdown("""
 /* Latar belakang dan font */
 .stApp {
     background-color: #fff5f7;  /* pink pastel */
-    color: #2d3436;
+    textColor= #2c2c2c   
     font-family: 'Segoe UI', sans-serif;
 }
 
 /* Tombol */
 .stButton > button {
-    background-color: #81c784;  /* hijau pastel */
+    primaryColor: #81c784;  /* hijau pastel */
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -30,12 +30,12 @@ st.markdown("""
     transition: 0.3s ease;
 }
 .stButton > button:hover {
-    background-color: #66bb6a; /* hijau sedikit lebih gelap */
+    primaryColor="#81c784; /* hijau */
 }
 
 /* Sidebar warna pink terang */
 [data-testid="stSidebar"] {
-    background-color: #f8ccdbff !important;
+    secondaryBackgroundColor= #f8ccdbff !important;
 }
 
 /* Judul dan header */
@@ -52,7 +52,7 @@ h1, h2, h3 {
             
 /* Kotak input */
 .stNumberInput > div > div > input {
-    background-color: white;
+    backgroundColor: white;
 }
 </style>
 """, unsafe_allow_html=True)

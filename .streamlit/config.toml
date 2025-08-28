@@ -1,9 +1,11 @@
 [theme]
 primaryColor="#81c784"                 # Hijau pastel (tombol, slider, aksen)
-backgroundColor="#f8ccdbff"              # Pink pastel lembut (latar utama)
+backgroundColor="#fff5f7"              # Pink pastel lembut (latar utama)
 secondaryBackgroundColor="#f8ccdbff"     # Pink terang (sidebar, input)
 textColor="#2c2c2c"                     # Abu gelap
-font = "sans serif"
+background-color="#66bb6a"
+font= "sans serif"
+color="#5f253aff" #abu gelap
 
 [server]
 enableCORS = true
