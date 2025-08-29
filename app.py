@@ -10,19 +10,20 @@ st.set_page_config(
     page_icon="🩺",
     layout="centered"
 )
+import streamlit as st
 
 st.markdown("""
 <style>
 /* Latar belakang dan font */
 .stApp {
     background-color: #fff5f7;  /* pink pastel */
-    textColor= #2c2c2c   
+    color: #2c2c2c;             /* teks abu gelap */
     font-family: 'Segoe UI', sans-serif;
 }
 
 /* Tombol */
 .stButton > button {
-    primaryColor: #81c784;  /* hijau pastel */
+    background-color: #81c784;  /* hijau pastel */
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -30,41 +31,31 @@ st.markdown("""
     transition: 0.3s ease;
 }
 .stButton > button:hover {
-    primaryColor="#81c784; /* hijau */
+    background-color: #66bb6a;  /* hijau saat hover */
 }
 
 /* Sidebar warna pink terang */
 [data-testid="stSidebar"] {
-    secondaryBackgroundColor= #f8ccdbff !important;
+    background-color: #f8ccdb !important;
 }
 
 /* Judul dan header */
 h1, h2, h3 {
-    color: #5f253aff; /* pink tua */
+    color: #5f253a;  /* pink tua */
 }
 .title-style {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-top: -30px;
-    color: #5f253aff;
+    color: #5f253a;
 }
             
 /* Kotak input */
-.stNumberInput > div > div > input {
-    backgroundColor: white;
+input {
+    background-color: white;
 }
 </style>
-""", unsafe_allow_html=True)
-
-# Kurangi jarak judul ke atas
-st.markdown("""
-    <style>
-        .block-container {
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
-    </style>
 """, unsafe_allow_html=True)
 
 # Load the model and scaler
